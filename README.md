@@ -1,5 +1,3 @@
-# ModernFlatAvaloniaUI
-
 Example of a modern flat UI developer in C# and Avalonia, a WPF like platform.
 
 ## Source
