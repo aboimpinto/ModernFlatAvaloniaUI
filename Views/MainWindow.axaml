@@ -3,15 +3,65 @@
         xmlns:vm="using:ModernFlatAvaloniaUI.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:controls="clr-namespace:ModernFlatAvaloniaUI.Controls"
         x:Class="ModernFlatAvaloniaUI.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="ModernFlatAvaloniaUI">
+        Title="ModernFlatAvaloniaUI"
+        Background="Transparent"
+        TransparencyLevelHint="AcrylicBlur"
+        WindowStartupLocation="CenterScreen"
+        Width="800"
+        Height="450">
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Panel>
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial 
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.65" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
 
+        <Border Background="#272537">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBlock 
+                    Grid.Column="0" 
+                    Grid.Row="0"
+                    Text="FlatUI"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="22"
+                    FontWeight="Bold"
+                    Margin="20 0 0 0"
+                    Foreground="White" />
+
+                <StackPanel Grid.Column="0" Grid.Row="1">
+                    <controls:MenuItemButton 
+                        Content="Home"
+                        Classes="MenuItem"
+                        IsChecked="True" />
+                    
+                    <controls:MenuItemButton 
+                        Content="Help"
+                        Classes="MenuItem" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Panel>
 </Window>

@@ -8,5 +8,9 @@
 
     <Application.Styles>
         <FluentTheme Mode="Light"/>
+        
+        <StyleInclude Source="avares://MaterialDesign.Avalonia.PackIcon/Assets/Generic.xaml" />
+
+        <StyleInclude Source="/Assets/MenuItemButtonStyle.axaml" />
     </Application.Styles>
 </Application>
