@@ -54,11 +54,13 @@
                 <StackPanel Grid.Column="0" Grid.Row="1">
                     <controls:MenuItemButton 
                         Content="Home"
+                        Kind="Home"
                         Classes="MenuItem"
                         IsChecked="True" />
                     
                     <controls:MenuItemButton 
                         Content="Help"
+                        Kind="HelpCircle"
                         Classes="MenuItem" />
                 </StackPanel>
             </Grid>

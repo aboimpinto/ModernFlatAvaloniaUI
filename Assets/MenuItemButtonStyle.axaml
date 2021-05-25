@@ -13,7 +13,7 @@
               Height="50">
 
               <material:PackIcon
-                Kind="MonitorDashboard"
+                Kind="{Binding Kind, RelativeSource={RelativeSource TemplatedParent}}"
                 VerticalAlignment="Center"
                 Margin="20 0 0 0" />
 
