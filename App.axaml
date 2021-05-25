@@ -12,5 +12,6 @@
         <StyleInclude Source="avares://MaterialDesign.Avalonia.PackIcon/Assets/Generic.xaml" />
 
         <StyleInclude Source="/Assets/MenuItemButtonStyle.axaml" />
+        <StyleInclude Source="/Assets/SearchTextBoxStyle.axaml" />
     </Application.Styles>
 </Application>

@@ -63,6 +63,16 @@
                         Kind="HelpCircle"
                         Classes="MenuItem" />
                 </StackPanel>
+
+                <TextBox 
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Watermark="Search..."
+                    Width="200"
+                    Height="40"
+                    Classes="SearchTextBox" />
             </Grid>
         </Border>
     </Panel>
