@@ -13,5 +13,6 @@
 
         <StyleInclude Source="/Assets/MenuItemButtonStyle.axaml" />
         <StyleInclude Source="/Assets/SearchTextBoxStyle.axaml" />
+        <StyleInclude Source="/Assets/QuitButtonStyle.axaml" />
     </Application.Styles>
 </Application>

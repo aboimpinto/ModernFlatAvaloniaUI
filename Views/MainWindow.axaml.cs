@@ -17,6 +17,11 @@ namespace ModernFlatAvaloniaUI.Views
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+
+            this.FindControl<Control>("MainPanel").PointerPressed += (i, e) =>
+            {
+                PlatformImpl?.BeginMoveDrag(e);
+            };
         }
     }
 }

@@ -1,0 +1,35 @@
+<Styles 
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:material="clr-namespace:MaterialDesign.Avalonia.PackIcon;assembly=MaterialDesign.Avalonia.PackIcon">
+  
+  <Style Selector="Button.QuitButtonStyle">
+    <Style.Setters>
+      <Setter Property="Template">
+          <ControlTemplate>
+            <Border x:Name="PART_ContentPresenter" Background="{TemplateBinding Background}" CornerRadius="10">
+              <StackPanel Orientation="Vertical" Margin="5">
+                <material:PackIcon
+                    Width="32"
+                    Height="32"
+                    Kind="PowerSettingsNew" />
+
+                <TextBlock 
+                    Text="Exit" 
+                    FontSize="10" 
+                    HorizontalAlignment="Center" />
+              </StackPanel>
+            </Border>
+          </ControlTemplate>
+      </Setter>
+
+      <Setter Property="Background" Value="#272537" />
+      <Setter Property="Foreground" Value="White" />
+    </Style.Setters>
+  </Style>
+
+  <Style Selector="Button.QuitButtonStyle:pointerover">
+    <Setter Property="Background" Value="#22202f" />
+  </Style>
+
+</Styles>
