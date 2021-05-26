@@ -1,0 +1,82 @@
+<UserControl 
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  x:Class="ModernFlatAvaloniaUI.Views.DashboardView">
+  
+  <StackPanel>
+    <TextBlock 
+      Text="Dashboard"
+      Foreground="White"
+      FontSize="28"
+      HorizontalAlignment="Left"
+      Margin="0 0 0 20" />
+
+    <StackPanel Orientation="Horizontal">
+      <Border Width="400" Height="200" CornerRadius="10">
+        <Border.Background>
+          <LinearGradientBrush StartPoint="0,0" EndPoint="100,200">
+            <GradientStop Color="#5bc3ff" Offset="0.0" />
+            <GradientStop Color="#3aa0ff" Offset="1.0" />
+          </LinearGradientBrush>
+        </Border.Background>
+      </Border>
+      
+      <Border Width="200" Height="200" CornerRadius="10" Margin="45 0 0 0">
+        <Border.Background>
+          <LinearGradientBrush StartPoint="0,0" EndPoint="100,200">
+            <GradientStop Color="#ffc554" Offset="0.0" />
+            <GradientStop Color="#ffb73a" Offset="1.0" />
+          </LinearGradientBrush>
+        </Border.Background>
+      </Border>
+    </StackPanel>
+
+    <StackPanel>
+
+      <StackPanel.Styles>
+        <Style Selector="Border">
+          <Setter Property="Margin" Value="15 0 0 0" />
+        </Style>
+      </StackPanel.Styles>
+
+      <TextBlock 
+        Text="Section"
+        Foreground="White"
+        FontSize="20"
+        HorizontalAlignment="Left"
+        Margin="0 10 0 10" />
+
+        <StackPanel Orientation="Horizontal">
+          <Border 
+            Width="150" 
+            Height="150" 
+            Background="#844eff" 
+            CornerRadius="10"
+            Margin="0" />
+
+            <Border 
+              Width="150" 
+              Height="150" 
+              Background="#4e99ff" 
+              CornerRadius="10" />
+
+            <Border 
+              Width="150" 
+              Height="150" 
+              Background="#4eff91" 
+              CornerRadius="10" />
+
+            <Border 
+              Width="150" 
+              Height="150" 
+              Background="#ecff4e" 
+              CornerRadius="10" />
+
+        </StackPanel>
+    </StackPanel>
+
+  </StackPanel>
+
+</UserControl>

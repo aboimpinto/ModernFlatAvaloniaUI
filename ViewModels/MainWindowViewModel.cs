@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ReactiveUI;
 
 namespace ModernFlatAvaloniaUI.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        public string Greeting => "Welcome to Avalonia!";
+        private ViewModelBase _navigationContent = new DashboardViewModel();
+
+        public ViewModelBase NavigationContent 
+        { 
+            get => this._navigationContent;
+            set => this.RaiseAndSetIfChanged(ref this._navigationContent, value);
+        }
     }
 }

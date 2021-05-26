@@ -1,17 +1,18 @@
-<Window xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:ModernFlatAvaloniaUI.ViewModels"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:controls="clr-namespace:ModernFlatAvaloniaUI.Controls"
-        x:Class="ModernFlatAvaloniaUI.Views.MainWindow"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="ModernFlatAvaloniaUI"
-        Background="Transparent"
-        TransparencyLevelHint="AcrylicBlur"
-        WindowStartupLocation="CenterScreen"
-        Width="800"
-        Height="450">
+<Window 
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:ModernFlatAvaloniaUI.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:ModernFlatAvaloniaUI.Controls"
+    x:Class="ModernFlatAvaloniaUI.Views.MainWindow"
+    Icon="/Assets/avalonia-logo.ico"
+    Title="ModernFlatAvaloniaUI"
+    Background="Transparent"
+    TransparencyLevelHint="AcrylicBlur"
+    WindowStartupLocation="CenterScreen"
+    Width="880"
+    Height="560">
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
@@ -53,8 +54,8 @@
 
                 <StackPanel Grid.Column="0" Grid.Row="1">
                     <controls:MenuItemButton 
-                        Content="Home"
-                        Kind="Home"
+                        Content="Dashboard"
+                        Kind="ViewDashboard"
                         Classes="MenuItem"
                         IsChecked="True" />
                     
@@ -72,7 +73,14 @@
                     Watermark="Search..."
                     Width="200"
                     Height="40"
-                    Classes="SearchTextBox" />
+                    Classes="SearchTextBox"
+                    Margin="5" />
+
+                <ContentControl 
+                    Grid.Column="1" 
+                    Grid.Row="1" 
+                    Content="{Binding NavigationContent}"
+                    Margin="5" />
             </Grid>
         </Border>
     </Panel>
