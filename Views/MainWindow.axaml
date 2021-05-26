@@ -57,12 +57,14 @@
                         Content="Dashboard"
                         Kind="ViewDashboard"
                         Classes="MenuItem"
-                        IsChecked="True" />
+                        IsChecked="True"
+                        Command="{Binding DashboardButtonClicked}" />
                     
                     <controls:MenuItemButton 
                         Content="Help"
                         Kind="HelpCircle"
-                        Classes="MenuItem" />
+                        Classes="MenuItem"
+                        Command="{Binding HelpButtonClicked}" />
                 </StackPanel>
 
                 <TextBox 

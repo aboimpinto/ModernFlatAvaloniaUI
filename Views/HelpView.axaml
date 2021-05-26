@@ -1,0 +1,15 @@
+<UserControl 
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  x:Class="ModernFlatAvaloniaUI.Views.HelpView">
+  
+  <TextBlock 
+      Text="Help"
+      Foreground="White"
+      FontSize="28"
+      HorizontalAlignment="Left"
+      Margin="0 0 0 20" />
+
+</UserControl>

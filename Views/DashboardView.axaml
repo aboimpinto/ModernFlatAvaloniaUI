@@ -73,10 +73,7 @@
               Height="150" 
               Background="#ecff4e" 
               CornerRadius="10" />
-
         </StackPanel>
     </StackPanel>
-
   </StackPanel>
-
 </UserControl>
