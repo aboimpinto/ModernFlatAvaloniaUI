@@ -36,7 +36,7 @@ namespace ModernFlatAvaloniaUI.Behaviors
         {
             if (this.CloseTrigger)
             {
-                this.AssociatedObject.Close();
+                this.AssociatedObject?.Close();
             }
         }
     }
