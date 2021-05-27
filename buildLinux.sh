@@ -1,1 +1,1 @@
-dotnet publish -c Release -r linux-x64 -f net5.0 -p:SelfContained=true -p:PublishSingleFile=true
+dotnet publish -c Release -r linux-x64 -f net5.0 -p:SelfContained=true -p:PublishSingleFile=true -o Release
